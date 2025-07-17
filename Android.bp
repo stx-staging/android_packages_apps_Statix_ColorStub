@@ -30,3 +30,15 @@ android_app {
     product_specific: true,
     sdk_version: "current",
 }
+
+android_app {
+    name: "StatixColorStub-Google",
+    manifest: "AndroidManifest-Google.xml",
+
+    resource_dirs: ["res"],
+
+    certificate: "platform",
+    product_specific: true,
+    sdk_version: "current",
+    overrides: ["StatixColorStub"],
+}
